@@ -24,6 +24,8 @@ default:
 	@echo "  CODEC options"
 	@echo "    yaz"
 	@echo "    ucl"
+	@echo "    lzo"
+	@echo "    aplib"
 
 # every GAME option should have a matching .ld of the same name
 LDFILE = src/ld/$(GAME).ld
