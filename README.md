@@ -39,7 +39,15 @@ OoT NTSC 1.0 was used for these tests. `yaz` is the game's original codec.
 
 Codecs are ordered such that compression ratio improves at the expense of load times as you walk down the list. If you're having a hard time getting your rom to compress to under 32 MB, start at the beginning and work your way down.
 
-## How to use
+## z64compress integration
+
+Find the appropriate patch for your rom\* in this repo's `patch` folder. You can apply this patch to your rom using [CloudMax's online patcher](https://cloudmodding.com/app/rompatcher). If you're using decomp, grab a codec from the `src` folder and adapt it to work in place of decomp's `src/boot/yaz0.c`.
+
+Now compress your rom using [`z64compress`](https://github.com/z64me/z64compress).
+
+\* If you can't find a codec patch for your rom, your rom is unsupported.
+
+## zzrtl integration
 
 First, you need to compress your rom using [`zzrtl`](http://www.z64.me/tools/zzrtl).
 
